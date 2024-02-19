@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    
+</head>
+<body>
+
+    <header>
+
+    
+        <div class="title">
+            <h1> Library pages</h1>
+        </div>
+
+    
+    
+    <div>
+            <!-- Button to open the dialog -->
+
+    <div class = "buttons">
+               
+        <button onclick="displayBooks()"> Display books</button>
+        <button onclick="openDialog('addBookDialog')">Add a book</button>
+        
+
+    </header class = header>
+        
+            <dialog id="addBookDialog">
+            
+                <form id="addBookForm" onsubmit="submitBook(event)">
+                    
+                    <div>
+                    <input id="btitle" type="text" placeholder="Book title">
+                    <input id="bauthor" type="text" placeholder="Book author">
+                    <input id="bpages" type="number" placeholder="Page count">
+                    </div>  
+
+                    <div id="inDial"> 
+                        <label class="switch">
+                            <input  id="bstatus" type="checkbox" checked  onclick="changeState(event)">
+                            <span class="slider round"></span>
+                        </label>
+
+                        <button id = "close" onclick="closeDialog('addBookDialog')"> Add book now </button>   
+                    </div>
+                
+                    
+                   
+                    
+                    
+                </div>
+                </form>
+            </dialog>
+        
+
+        
+  
+
+    <div  id ="shelf">
+        <div id="booki">
+
+
+        </div>
+
+    </div>
+
+  
+
+    <script src="lib.js"></script>
+    
+</body>
+</html>
